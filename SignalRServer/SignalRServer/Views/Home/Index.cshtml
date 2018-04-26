@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<button id="createCubeButton">Create cube</button>
+
+@section script {
+    <script type="text/javascript">
+        $(function () {
+            $.connection.hub.start().done(function () {
+                $('#createCubeButton').click(invokeCreateCube);
+            });
+        });
+
+        function invokeCreateCube() {
+            $.connection.createCubeHub.server.createCube();
+        }
+    </script>
+}
