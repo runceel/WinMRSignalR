@@ -22,7 +22,7 @@ public class SignalRManager : MonoBehaviour
 
     private void InitializeConnection()
     {
-        _connection = new HubConnection("http://signalrserver20180426113915.azurewebsites.net/");
+        _connection = new HubConnection("http://<your site name>.azurewebsites.net/");
         var createCubeProxy = _connection.CreateHubProxy("createCubeHub");
         createCubeProxy.On<string>("create", Create);
         _connection.Start().ContinueWith(x =>
