@@ -1,7 +1,8 @@
 # About this
 
-This is a Windows Mixed Reality + SignalR sample code for below blog post.
+This is a Windows Mixed Reality + SignalR sample code for below blog post(Japanese article).
 
+http://blog.okazuki.jp/entry/2018/04/26/125929
 
 # How to run
 
