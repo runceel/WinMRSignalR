@@ -1,6 +1,7 @@
 # About this
 
-This is a sample code for below blog post.
+This is a Windows Mixed Reality + SignalR sample code for below blog post.
+
 
 # How to run
 
@@ -14,7 +15,7 @@ Deploy SignalRServer project to your web site.
 - Build UWP project to UWP folder.
 - Open the project using Visual Studio 2017.
 - Install Microsoft.AspNet.SignalR.Client package using NuGet
-- Change URL as your server at SignalRManager.cs line 25.
+- Change the URL of SignalRManager.cs line 25 to your server.
 
 ```cs
 _connection = new HubConnection("http://<your site name>.azurewebsites.net/");
